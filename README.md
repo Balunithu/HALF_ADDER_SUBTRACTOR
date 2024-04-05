@@ -1,3 +1,5 @@
+### REGISTER NUMBER:212223220071
+### NAME:NITHYA SHREE.B
 # HALF_ADDER_SUBTRACTOR
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
@@ -49,13 +51,24 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
-
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-
-Developed by: RegisterNumber:*/
+```
+module half_add(a,b,sum,carry,D,Bo);
+input a,b;
+output sum,carry,D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
+xor(sum,a,b);
+and(carry,a,b);
+wire abar;
+not(abar,a);
+xor(D,a,b);
+and(Bo,abar,b);
+endmodule
+```
+![Screenshot 2024-04-05 103113](https://github.com/Balunithu/HALF_ADDER_SUBTRACTOR/assets/161273477/2d0946d0-aad9-4fb0-a0dd-fc6a786cdcd5)
 
 **RTL Schematic**
 
 **Output/TIMING Waveform**
+
+![Screenshot 2024-04-05 103129](https://github.com/Balunithu/HALF_ADDER_SUBTRACTOR/assets/161273477/99d4d6b2-29c8-4af3-a849-77b66b78f19e)
 
 **Result:**
