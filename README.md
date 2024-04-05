@@ -71,4 +71,4 @@ endmodule
 
 ![Screenshot 2024-04-05 103129](https://github.com/Balunithu/HALF_ADDER_SUBTRACTOR/assets/161273477/99d4d6b2-29c8-4af3-a849-77b66b78f19e)
 
-**Result:**
+**Result:**program implement half-adder-and-half-subtractor-circuit successfully executed**
